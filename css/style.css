@@ -1,0 +1,142 @@
+/* @media (max-width: 480px) { */
+
+    body {
+        box-sizing: content-box;
+        margin: 0 auto;
+        /* background-color: #000; */
+        /* background-color: #dfe6e9; */
+        /* background-color: #f1f2f6; */
+        background-color: #fff;
+        color: #FFF;
+        /* font-family: 'Monoton', cursive; */
+        /* color: #4a69bd; */
+        /* font-family: 'Barriecito', cursive; */
+         font-family: 'Karma', serif;
+        /* color: #273c75; */
+        color: #2d3436;
+        /* text-align: center; */
+    }
+
+    #contenu {
+        margin-top: 10rem;
+    }
+
+    li {
+        list-style-type: none;
+        /* font-family: 'Vollkorn SC', serif; */
+        /* font-family: 'Saira Stencil One', cursive; */
+
+    }
+
+    #menu {
+        /* position: -webkit-sticky; */
+        position: fixed;
+        /* background-color: #67e6dc; */
+        /* background-color: #b2bec3; */
+        /* background-color: #dfe4ea; */
+        background-color: #f1f2f6;
+        top: 0;
+        left:0;
+        right:0;
+        /* margin-bottom: 4rem; */
+        padding-bottom: 1rem;
+        text-align: center;
+
+
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 0 0.5rem;
+        text-decoration: none;
+
+        /* color: #4a69bd; */
+    }
+
+    a {
+        display: block;
+        color: #4a69bd;
+        text-decoration: none;
+    }
+
+    #contact a {
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #description {
+        margin-top: 8rem;
+    }
+
+    #description p {
+        text-align: left;
+    }
+    #description img {
+        border-radius: 50%;
+        float: left;
+    }
+
+    #description, #competences, #curiosites, #realisations, #copains, #contact {
+        /* border: solid #4a69bd 0.05rem; */
+        /* top: 10rem; */
+        margin: 0 1rem 4rem 1rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    /* ul {
+        text-align: left;
+    } */
+
+
+    #gauche, #droite {
+        display: inline-block;
+        width: 45%;
+        text-align: center;
+
+    }
+    
+    .block {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .block, p.description {
+        text-align: left;
+    }
+
+    #container {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        /* text-align: center; */
+    }
+
+    .contents {
+        flex-basis: 30%;
+        /* border: solid #4a69bd 0.2rem; */
+        margin:0.5rem 0.5rem 0.5rem 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 0 0 1rem 0;
+    }
+
+    img {
+        height: 6rem;
+        width: 6rem;
+        /* background: #000; */
+    }
+
+    
+/* } */
