@@ -17,9 +17,6 @@
 <!-- Required Core Stylesheet -->
 <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 
-<!-- Optional Theme Stylesheet -->
-<!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">-->
-
     <title>Sommaire Projets</title>
 </head>
 <body>
