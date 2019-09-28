@@ -1,9 +1,8 @@
 let glide = new Glide('.glide', {
-    type: "slider",
-    focusAt: 'center',
+    type: "carousel",
     perView: 3,
-    autoplay: 2000,
-    hoverpause: false
+    autoplay: 3000,
+    hoverpause: true
   })
 
 glide.mount()

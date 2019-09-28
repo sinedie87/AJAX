@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 
 <!-- Optional Theme Stylesheet -->
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+<!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">-->
 
     <title>Sommaire Projets</title>
 </head>
@@ -39,7 +39,7 @@
             <section id="description">
                 <h2>Bonjour!</h2>
 
-                    <img src="img/test.png" alt="">
+                    <!-- <img src="img/test.png" alt=""> -->
                     
                     <p>Après une carrière d'une dizaine d'années en tant que manager d'équipes commerciales, j'ai décidé d'entreprendre une reconversion professionnelle en tant que Web Developpeur.</p>
 
@@ -79,18 +79,18 @@
                         </div>
                     </div>
                     <div id="droite">
-                            <h3>Humaines</h3>
+                            <h3>Personnalité</h3>
                             <div class="block">
                                 <ul>
-                                    <li>HTML</li>
-                                    <li>Javascript</li>
-                                    <li>AJAX</li>
-                                    <li>MySQL</li>
-                                    <li>Symfony</li>
-                                    <li>Webpack</li>
+                                    <li>Social</li>
+                                    <li>Curieux</li>
+                                    <li>Autonome</li>
+                                    <li>Dynamique</li>
+                                    <li>Rigoureux</li>
+                                    <li>Persévérant</li>
                                 </ul>
                             </div>
-                            <div class="block">
+                            <!-- <div class="block">
                                 <ul>
                                     <li>CSS</li>
                                     <li>jQuery</li>
@@ -99,7 +99,7 @@
                                     <li>Doctrine</li>
                                     <li>GitHub</li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
             </section>
 
