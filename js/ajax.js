@@ -11,7 +11,7 @@ $.ajax({
             $('.glide__slides').append("<li class='glide__slide'>"
             + "<div class='contents'>"
             + "<a href=" + content.url + ' target="_blank">' + "<img src=" + content.image + ">" + "</a>"
-            + "<h2>" + content.title + "</h2>" 
+            + "<h3>" + content.title + "</h3>" 
             + "<p id='detail'>" + content.description + "</p>"
             + "<h4>" + "Technologies utilisées :" + "<h4>"
             + "<p id='techno'>" + content.technologies + "</p></div>"

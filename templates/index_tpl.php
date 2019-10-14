@@ -78,7 +78,6 @@
                                     <li>Autonome</li>
                                     <li>Dynamique</li>
                                     <li>Rigoureux</li>
-                                    <li>Persévérant</li>
                                 </ul>
                             </div>
                             <div class="droite">
@@ -87,7 +86,7 @@
                                     <li>Réactif</li>
                                     <li>Investi</li>
                                     <li>Polyvalent</li>
-                                    <li></li>
+                                    <li>Persévérant</li>
                                     <li></li>
                                 </ul>
                             </div>

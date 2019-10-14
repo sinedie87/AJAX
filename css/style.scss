@@ -5,8 +5,12 @@ $link-color: #4A69BD;
 $text-typo: Karma, serif;
 
 @mixin block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 @mixin imgS {
@@ -45,7 +49,8 @@ $text-typo: Karma, serif;
 
 // Version globale
 body {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     color: $text-color;
     font-family: $text-typo;
 
@@ -103,7 +108,7 @@ body {
 // Version mobile jusqu'à 575px
 @media (max-width: 575px) {
 
-    a {
+    nav a {
         padding: 0.3rem;
     }
 
@@ -133,9 +138,9 @@ body {
 // Version comprise entre 576 et 767px
 @media (min-width: 576px) and (max-width: 767px) {
 
-        a {
-            padding: 0 0.5rem;
-        }
+    nav a {
+        padding: 0 0.5rem;
+    }
 
     #realisations {
         @include margeRea;
@@ -159,7 +164,7 @@ body {
 // Version comprise entre 768 et 991px
 @media (min-width: 768px) and (max-width: 991px) {
 
-    a {
+    nav a {
         padding: 0 1rem;
     }
 
@@ -181,7 +186,7 @@ body {
 // Version comprise entre 992px et 1199px
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    a {
+    nav a {
         padding: 0 2rem;
     }
 
@@ -201,6 +206,11 @@ body {
 }
 
 @media (min-width: 1200px) {
+    
+    nav a {
+        padding: 0 2rem;
+    }
+    
     #description {
         img {
             float: left;
@@ -211,7 +221,7 @@ body {
     #realisations {
         @include margeRea;
 
-        a, h2 {
+        a, h3 {
             text-align: center;
         }
 
