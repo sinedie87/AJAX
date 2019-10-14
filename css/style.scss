@@ -1,0 +1,222 @@
+$nav-bgc: #F1F2F6;
+$body-bgc: #FFF;
+$text-color: #2D3436;
+$link-color: #4A69BD;
+$text-typo: Karma, serif;
+
+@mixin block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin imgS {
+    height: 4rem;
+    width: 4rem;
+}
+
+@mixin imgM {
+    height: 6rem;
+    width: 6rem;
+}
+
+@mixin imgL {
+    height: 8rem;
+    width: 8rem;
+}
+
+@mixin imgXL  {
+    height: 10rem;
+    width: 10rem;
+}
+
+@mixin imgXXL {
+    height: 12rem;
+    width: 12rem;
+}
+
+@mixin margeRea {
+    h4 {
+        margin: 0;
+    }
+    #techno {
+        margin-top: 0.5rem;
+    }
+}
+
+// Version globale
+body {
+    box-sizing: border-box;
+    color: $text-color;
+    font-family: $text-typo;
+
+    #contenu {
+        margin-top: 8rem;
+    }
+
+    #menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: $nav-bgc;
+        width: 100%;
+        text-align: center;
+    }
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+#description {
+    img {
+        float: right;
+        margin-left: 0.5rem;;
+    }
+}
+
+#competences {
+    clear: both;
+
+    .block {
+            @include block;
+        }
+}
+
+#realisations {
+    a {
+        display: block;
+    }
+}
+
+#contact {
+    .block {
+        @include block;
+    }
+}
+
+// Version mobile jusqu'à 575px
+@media (max-width: 575px) {
+
+    a {
+        padding: 0.3rem;
+    }
+
+    #description {
+        img {
+            width: 6rem;
+        }
+    }
+
+    #realisations {
+        #detail, #techno, h4 {
+            display: none;
+        }
+
+        img {
+            @include imgS;
+        }
+    }
+
+    #contact {
+        img {
+            @include imgS;
+        }
+    }
+}
+
+// Version comprise entre 576 et 767px
+@media (min-width: 576px) and (max-width: 767px) {
+
+        a {
+            padding: 0 0.5rem;
+        }
+
+    #realisations {
+        @include margeRea;
+
+        img {
+            @include imgM;
+        }
+    }
+
+    .contents {
+        margin: 0.5rem;
+    }
+
+    #contact {
+        img {
+            @include imgM;
+        }
+    }
+}
+
+// Version comprise entre 768 et 991px
+@media (min-width: 768px) and (max-width: 991px) {
+
+    a {
+        padding: 0 1rem;
+    }
+
+    #realisations {
+        @include margeRea;
+
+        img {
+            @include imgL;
+        }
+    }
+
+    #social {
+        img {
+            @include imgL;
+        }
+    }
+}
+
+// Version comprise entre 992px et 1199px
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    a {
+        padding: 0 2rem;
+    }
+
+    #realisations {
+        @include margeRea;
+
+        img {
+            @include imgXL;
+        }
+    }
+
+    #social {
+        img {
+            @include imgXL;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #description {
+        img {
+            float: left;
+            margin: 0 1rem 1rem 0;
+        }
+    }
+
+    #realisations {
+        @include margeRea;
+
+        a, h2 {
+            text-align: center;
+        }
+
+        img {
+            @include imgXXL;
+        }
+    }
+}

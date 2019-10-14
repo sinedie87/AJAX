@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC:900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">  -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Adamina|Arapey|Archivo|Gentium+Basic|Karma|Pontano+Sans|Spectral&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Karma&display=swap" rel="stylesheet">
 
 <!-- Required Core Stylesheet -->
@@ -36,7 +29,7 @@
             <section id="description">
                 <h2>Bonjour!</h2>
 
-                    <!-- <img src="img/test.png" alt=""> -->
+                    <img src="img/ludo.jpg" id="photoProfil" alt="Photo de Profil">
                     
                     <p>Après une carrière d'une dizaine d'années en tant que manager d'équipes commerciales, j'ai décidé d'entreprendre une reconversion professionnelle en tant que Web Developpeur.</p>
 
@@ -47,37 +40,38 @@
                     <!-- <p>const Ludo = (beer, data) => {
                         return data > 100 ? beer = true : false
                         }</p> -->
-                        <!-- <small>Et si tu veux me donner un coup de main, je prends. J'ai envie d'apprendre !</small> -->
+
             </section>
 
             <section id="competences">
                 <h2>Compétences</h2>
-                    <div id="gauche">
-                        <h3>Techniques</h3>
+                    <h3>Techniques</h3>
                         <div class="block">
-                            <ul>
-                                <li>HTML</li>
-                                <li>Javascript</li>
-                                <li>AJAX</li>
-                                <li>MySQL</li>
-                                <li>Symfony</li>
-                                <li>Webpack</li>
-                            </ul>
+                            <div class="gauche">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>Javascript</li>
+                                    <li>AJAX</li>
+                                    <li>MySQL</li>
+                                    <li>Symfony</li>
+                                    <li>Webpack</li>
+                                </ul>
+                            </div>
+                            <div class="droite">
+                                <ul>
+                                    <li>CSS</li>
+                                    <li>jQuery</li>
+                                    <li>PHP</li>
+                                    <li>TWIG</li>
+                                    <li>Doctrine</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
                         </div>
+
+                    <h3>Personnalité</h3>
                         <div class="block">
-                            <ul>
-                                <li>CSS</li>
-                                <li>jQuery</li>
-                                <li>PHP</li>
-                                <li>TWIG</li>
-                                <li>Doctrine</li>
-                                <li>GitHub</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="droite">
-                            <h3>Personnalité</h3>
-                            <div class="block">
+                            <div class="gauche">
                                 <ul>
                                     <li>Social</li>
                                     <li>Curieux</li>
@@ -87,7 +81,7 @@
                                     <li>Persévérant</li>
                                 </ul>
                             </div>
-                            <div class="block">
+                            <div class="droite">
                                 <ul>
                                     <li>Loyal</li>
                                     <li>Réactif</li>
@@ -110,13 +104,6 @@
                         </ul>
                     </div>
                 </div>
-                    <!-- <div id="container"> -->
-                        <!--<div class="glide">
-                            <div class='glide__track' data-glide-el='track'>
-                                <ul class='glide__slides'></ul>
-                            </div>
-                        </div> -->
-                    <!-- </div> -->
             </section>
 
 
@@ -141,12 +128,12 @@
 
             <section id="contact">
                     <h2>Social</h2>
-                        <!-- <div class="block"> -->
-                            <a href="mailto:ludovic.bethenon@gmail.com">M'écrire!</a>
+                        <div class="block">
+                            <a href="mailto:ludovic.bethenon@gmail.com"><img src="img/email.png" alt=""></a>
                         <!-- </div> -->
                         <!-- <div class="block"> -->
                             <a href="https://github.com/sinedie87"><img src="img/GitHub.png" alt=""></a>
-                        <!-- </div> -->
+                        </div>
                 </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
