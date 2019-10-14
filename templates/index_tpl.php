@@ -87,16 +87,16 @@
                                     <li>Persévérant</li>
                                 </ul>
                             </div>
-                            <!-- <div class="block">
+                            <div class="block">
                                 <ul>
-                                    <li>CSS</li>
-                                    <li>jQuery</li>
-                                    <li>PHP</li>
-                                    <li>TWIG</li>
-                                    <li>Doctrine</li>
-                                    <li>GitHub</li>
+                                    <li>Loyal</li>
+                                    <li>Réactif</li>
+                                    <li>Investi</li>
+                                    <li>Polyvalent</li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
-                            </div> -->
+                            </div>
                         </div>
             </section>
 
