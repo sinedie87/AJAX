@@ -3,9 +3,10 @@ body {
   box-sizing: border-box;
   color: #2D3436;
   font-family: Karma, serif;
+  margin: 0 auto;
 }
 body #contenu {
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 body #menu {
   position: fixed;
@@ -15,6 +16,18 @@ body #menu {
   background-color: #F1F2F6;
   width: 100%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+body #menu h1 {
+  color: black;
 }
 body a {
   color: #4A69BD;
@@ -28,11 +41,35 @@ body li {
   float: right;
   margin-left: 0.5rem;
 }
+#description #para {
+  padding-bottom: 1rem;
+}
+#description #cv {
+  background-color: #4A69BD;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #FFF;
+}
 
 #competences {
   clear: both;
 }
-#competences .block {
+#competences ul {
+  padding: 0;
+}
+#competences #comp-tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#competences #comp-perso {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,6 +82,9 @@ body li {
   display: block;
 }
 
+#contact {
+  background-color: #F1F2F6;
+}
 #contact .block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,27 +93,49 @@ body li {
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
+#contact p {
+  padding-top: 2rem;
+  text-align: center;
+  margin: 0;
+}
 
 @media (max-width: 575px) {
   nav a {
     padding: 0.3rem;
   }
 
+  #description, #competences, #realisations, #curiosites, #contact {
+    padding: 5rem 1rem 0 1rem;
+  }
+
   #description img {
     width: 6rem;
+  }
+
+  #competences img {
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem;
   }
 
   #realisations #detail, #realisations #techno, #realisations h4 {
     display: none;
   }
   #realisations img {
-    height: 4rem;
-    width: 4rem;
+    height: 2rem;
+    width: 2rem;
   }
 
+  #curiosites {
+    padding-bottom: 5rem;
+  }
+
+  #contact {
+    padding: 0 0 0 1rem;
+  }
   #contact img {
-    height: 4rem;
-    width: 4rem;
+    height: 2rem;
+    width: 2rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -81,6 +143,16 @@ body li {
     padding: 0 0.5rem;
   }
 
+  #description, #competences, #realisations, #curiosites, #contact {
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  #competences img {
+    height: 4rem;
+    width: 4rem;
+    padding: 0.5rem;
+  }
+
   #realisations h4 {
     margin: 0;
   }
@@ -88,17 +160,24 @@ body li {
     margin-top: 0.5rem;
   }
   #realisations img {
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
   }
 
   .contents {
     margin: 0.5rem;
   }
 
+  #curiosites {
+    padding-bottom: 2rem;
+  }
+
+  #contact {
+    padding: 0 0 0 1rem;
+  }
   #contact img {
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -106,6 +185,16 @@ body li {
     padding: 0 1rem;
   }
 
+  #description, #competences, #realisations, #curiosites, #contact {
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  #competences img {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+  }
+
   #realisations h4 {
     margin: 0;
   }
@@ -113,13 +202,20 @@ body li {
     margin-top: 0.5rem;
   }
   #realisations img {
-    height: 8rem;
-    width: 8rem;
+    height: 4rem;
+    width: 4rem;
   }
 
-  #social img {
-    height: 8rem;
-    width: 8rem;
+  #curiosites {
+    padding-bottom: 2rem;
+  }
+
+  #contact {
+    padding: 0 0 0rem 1rem;
+  }
+  #contact img {
+    height: 4rem;
+    width: 4rem;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -127,6 +223,16 @@ body li {
     padding: 0 2rem;
   }
 
+  #description, #competences, #realisations, #curiosites, #contact {
+    padding: 3rem 1rem 0 1rem;
+  }
+
+  #competences img {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+  }
+
   #realisations h4 {
     margin: 0;
   }
@@ -134,13 +240,20 @@ body li {
     margin-top: 0.5rem;
   }
   #realisations img {
-    height: 10rem;
-    width: 10rem;
+    height: 4rem;
+    width: 4rem;
   }
 
-  #social img {
-    height: 10rem;
-    width: 10rem;
+  #curiosites {
+    padding-bottom: 3rem;
+  }
+
+  #contact {
+    padding: 0 0 0rem 1rem;
+  }
+  #contact img {
+    height: 4rem;
+    width: 4rem;
   }
 }
 @media (min-width: 1200px) {
@@ -148,9 +261,19 @@ body li {
     padding: 0 2rem;
   }
 
+  #description, #competences, #realisations, #curiosites, #contact {
+    padding: 4rem 1rem 0 1rem;
+  }
+
   #description img {
     float: left;
     margin: 0 1rem 1rem 0;
+  }
+
+  #competences img {
+    height: 4rem;
+    width: 4rem;
+    padding: 2rem;
   }
 
   #realisations h4 {
@@ -163,8 +286,20 @@ body li {
     text-align: center;
   }
   #realisations img {
-    height: 12rem;
-    width: 12rem;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  #curiosites {
+    padding-bottom: 4rem;
+  }
+
+  #contact {
+    padding: 0 0 0 1rem;
+  }
+  #contact img {
+    height: 4rem;
+    width: 4rem;
   }
 }
 

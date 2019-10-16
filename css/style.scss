@@ -14,28 +14,13 @@ $text-typo: Karma, serif;
 }
 
 @mixin imgS {
-    height: 4rem;
-    width: 4rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 @mixin imgM {
-    height: 6rem;
-    width: 6rem;
-}
-
-@mixin imgL {
-    height: 8rem;
-    width: 8rem;
-}
-
-@mixin imgXL  {
-    height: 10rem;
-    width: 10rem;
-}
-
-@mixin imgXXL {
-    height: 12rem;
-    width: 12rem;
+    height: 4rem;
+    width: 4rem;
 }
 
 @mixin margeRea {
@@ -53,9 +38,11 @@ body {
             box-sizing: border-box;
     color: $text-color;
     font-family: $text-typo;
+    margin: 0 auto;
+    
 
     #contenu {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 
     #menu {
@@ -66,6 +53,19 @@ body {
         background-color: $nav-bgc;
         width: 100%;
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        h1 {
+            color: black;
+        }
     }
 
     a {
@@ -83,14 +83,47 @@ body {
         float: right;
         margin-left: 0.5rem;;
     }
+
+    #para {
+        padding-bottom: 1rem;;
+    }
+
+    #cv {
+        background-color: $link-color;
+        padding: 1rem;
+        border-radius: 1rem;
+        color: #FFF;
+    }
 }
 
 #competences {
     clear: both;
 
-    .block {
-            @include block;
-        }
+    ul {
+        padding: 0;
+    }
+
+    #comp-tech {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    #comp-perso {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+    }
 }
 
 #realisations {
@@ -100,21 +133,39 @@ body {
 }
 
 #contact {
+    background-color: $nav-bgc;
+    
     .block {
         @include block;
+    }
+
+    p {
+        padding-top: 2rem;
+        text-align: center;
+        margin: 0;
     }
 }
 
 // Version mobile jusqu'à 575px
 @media (max-width: 575px) {
-
     nav a {
         padding: 0.3rem;
+    }
+
+    #description, #competences, #realisations, #curiosites, #contact {
+        padding: 5rem 1rem 0 1rem;
     }
 
     #description {
         img {
             width: 6rem;
+        }
+    }
+
+    #competences {
+        img {
+            @include imgS;
+            padding: 0.5rem;
         }
     }
 
@@ -128,7 +179,13 @@ body {
         }
     }
 
+    #curiosites {
+        padding-bottom: 5rem;
+    }
+
     #contact {
+        padding: 0 0 0 1rem;
+
         img {
             @include imgS;
         }
@@ -140,6 +197,17 @@ body {
 
     nav a {
         padding: 0 0.5rem;
+    }
+
+    #description, #competences, #realisations, #curiosites, #contact {
+        padding: 2rem 1rem 0 1rem;
+    }
+
+    #competences {
+        img {
+            @include imgM;
+            padding: 0.5rem;
+        }
     }
 
     #realisations {
@@ -154,7 +222,13 @@ body {
         margin: 0.5rem;
     }
 
+    #curiosites {
+        padding-bottom: 2rem;
+    }
+
     #contact {
+        padding: 0 0 0 1rem;
+
         img {
             @include imgM;
         }
@@ -168,17 +242,34 @@ body {
         padding: 0 1rem;
     }
 
+    #description, #competences, #realisations, #curiosites, #contact {
+        padding: 2rem 1rem 0 1rem;
+    }
+
+    #competences {
+        img {
+            @include imgM;
+            padding: 1rem;
+        }
+    }
+
     #realisations {
         @include margeRea;
 
         img {
-            @include imgL;
+            @include imgM;
         }
     }
 
-    #social {
+    #curiosites {
+        padding-bottom: 2rem;
+    }
+
+    #contact {
+        padding: 0 0 0rem 1rem;
+
         img {
-            @include imgL;
+            @include imgM;
         }
     }
 }
@@ -190,17 +281,34 @@ body {
         padding: 0 2rem;
     }
 
+    #description, #competences, #realisations, #curiosites, #contact {
+        padding: 3rem 1rem 0 1rem;
+    }
+
+    #competences {
+        img {
+            @include imgM;
+            padding: 1rem;
+        }
+    }
+
     #realisations {
         @include margeRea;
 
         img {
-            @include imgXL;
+            @include imgM;
         }
     }
 
-    #social {
+    #curiosites {
+        padding-bottom: 3rem;
+    }
+
+    #contact {
+        padding: 0 0 0rem 1rem;
+
         img {
-            @include imgXL;
+            @include imgM;
         }
     }
 }
@@ -211,10 +319,21 @@ body {
         padding: 0 2rem;
     }
     
+    #description, #competences, #realisations, #curiosites, #contact {
+        padding: 4rem 1rem 0 1rem;
+    }
+
     #description {
         img {
             float: left;
             margin: 0 1rem 1rem 0;
+        }
+    }
+
+    #competences {
+        img {
+            @include imgM;
+            padding: 2rem;
         }
     }
 
@@ -226,7 +345,19 @@ body {
         }
 
         img {
-            @include imgXXL;
+            @include imgM;
+        }
+    }
+
+    #curiosites {
+        padding-bottom: 4rem;
+    }
+
+    #contact {
+        padding: 0 0 0 1rem;
+
+        img {
+            @include imgM;
         }
     }
 }

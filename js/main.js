@@ -7,7 +7,7 @@ function scroll_if_anchor(href) {
     href = typeof(href) == "string" ? href : $(this).attr("href");
     
     // You could easily calculate this dynamically if you prefer
-    var fromTop = 144;
+    var fromTop = 16;
     
     // If our Href points to a valid, non-empty anchor, and is on the same page (e.g. #foo)
     // Legacy jQuery and IE7 may have issues: http://stackoverflow.com/q/1593174

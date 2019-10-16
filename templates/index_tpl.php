@@ -10,12 +10,12 @@
 <!-- Required Core Stylesheet -->
 <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 
-    <title>Sommaire Projets</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <div id="contenu">
         <section id="menu">
-        <h1>Ludovic BETHENON</h1>
+        <a href="#description"><h1>Ludovic BETHENON</h1></a>
             <nav>
                 <a href="#description">Bonjour!</a>
                 <a href="#competences">Compétences</a>
@@ -30,12 +30,16 @@
                 <h2>Bonjour!</h2>
 
                     <img src="img/ludo.jpg" id="photoProfil" alt="Photo de Profil">
+
+                    <p>Je souhaiterai intégrer une structure qui me permette de continuer mon apprentissage tout en ayant la possibilité de contribuer aux projets internes. Souhaitant mettre en pratique mes connaissances et les développer, je suis à la recherche d’une première expérience.</p>
                     
-                    <p>Après une carrière d'une dizaine d'années en tant que manager d'équipes commerciales, j'ai décidé d'entreprendre une reconversion professionnelle en tant que Web Developpeur.</p>
+                    <p>Suite à une reconversion professionnelle dans le domaine du développement WEB, j’ai effectué une formation de plusieurs mois portant sur les fondamentaux du métier : HTML, CSS, JavaScript, PHP. J'ai également manipulé des bases de données via MySQL.</p>
 
-                    <p>J'ai appris les fondamentaux du métier en me formant sur les langages HTML, CSS, Javascript ainsi que PHP. J'ai également manipulé des bases de données via MySQL.</p>
+                    <p>Désireux de renforcer mes acquis et en développer de nouveaux, j'enrichis mes connaissances par une pratique quotidienne sur des projets personnels.</p>
 
-                    <p>Je me forme actuellement sur le framework Symfony. Dans un avenir proche, j'ai également pour ambition d'apprendre de nouveaux langages notamment NodeJS et React.</p>
+                    <p id="para">Je me forme actuellement sur le framework Symfony. Dans un avenir proche, j'ai également pour ambition d'apprendre de nouvelles technologies notamment NodeJS et React.</p>
+
+                    <a id="cv" href="datas/cv.pdf" download>Télécharger mon CV</a>
 
                     <!-- <p>const Ludo = (beer, data) => {
                         return data > 100 ? beer = true : false
@@ -46,38 +50,52 @@
             <section id="competences">
                 <h2>Compétences</h2>
                     <h3>Techniques</h3>
-                        <div class="block">
+                        <div id="comp-tech">
                             <div class="gauche">
                                 <ul>
-                                    <li>HTML</li>
+                                    <img class="logo" src="img/logo/html5.svg" alt="">
+                                    <img class="logo" src="img/logo/css3.svg" alt="">
+                                    <img class="logo" src="img/logo/sass.svg" alt="">
+                                    <img class="logo" src="img/logo/javascript.svg" alt="">
+                                    <img class="logo" src="img/logo/jquery.svg" alt="">
+                                    <img class="logo" src="img/logo/ajx.svg" alt="">
+                                    <img class="logo" src="img/logo/php.svg" alt="">
+                                    <!-- <li>HTML</li>
                                     <li>Javascript</li>
                                     <li>AJAX</li>
                                     <li>MySQL</li>
                                     <li>Symfony</li>
-                                    <li>Webpack</li>
+                                    <li>Webpack</li> -->
                                 </ul>
                             </div>
                             <div class="droite">
                                 <ul>
-                                    <li>CSS</li>
+                                    <img class="logo" src="img/logo/mysql-5.svg" alt="">
+                                    <img class="logo" src="img/logo/symfony.svg" alt="">
+                                    <img class="logo" src="img/logo/webpack.svg" alt="">
+                                    <img class="logo" src="img/logo/twig.png" alt="">
+                                    <img class="logo" src="img/logo/doctrine.svg" alt="">
+                                    <img class="logo" src="img/logo/git.svg" alt="">
+                                    <img class="logo" src="img/logo/visual-studio-code.svg" alt="">
+                                    <!-- <li>CSS</li>
                                     <li>jQuery</li>
                                     <li>PHP</li>
                                     <li>TWIG</li>
                                     <li>Doctrine</li>
-                                    <li>GitHub</li>
+                                    <li>GitHub</li> -->
                                 </ul>
                             </div>
                         </div>
 
                     <h3>Personnalité</h3>
-                        <div class="block">
+                        <div id="comp-perso">
                             <div class="gauche">
                                 <ul>
                                     <li>Social</li>
                                     <li>Curieux</li>
+                                    <li>Rigoureux</li>
                                     <li>Autonome</li>
                                     <li>Dynamique</li>
-                                    <li>Rigoureux</li>
                                 </ul>
                             </div>
                             <div class="droite">
@@ -128,11 +146,12 @@
             <section id="contact">
                     <h2>Social</h2>
                         <div class="block">
-                            <a href="mailto:ludovic.bethenon@gmail.com"><img src="img/email.png" alt=""></a>
-                        <!-- </div> -->
-                        <!-- <div class="block"> -->
-                            <a href="https://github.com/sinedie87"><img src="img/GitHub.png" alt=""></a>
+                            <a href="mailto:ludovic.bethenon@gmail.com"><img src="img/logo/email.png" alt=""></a>
+                            <a href="https://github.com/sinedie87"><img src="img/logo/github-1.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/in/ludovic-bethenon-a71316196/"><img src="img/logo/linkedin.svg" alt=""></a>
+                            <a href="https://goo.gl/maps/aiZwnmYuNkhshqSm9" target="_blank"><img src="img/logo/location.svg" alt=""></a>
                         </div>
+                        <p>Copyright 2019 © Par Ludovic BETHENON. Tous droits réservés.</p>
                 </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
