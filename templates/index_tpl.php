@@ -31,7 +31,7 @@
 
                     <img src="img/ludo.jpg" id="photoProfil" alt="Photo de Profil">
 
-                    <p>Je souhaiterai intégrer une structure qui me permette de continuer mon apprentissage tout en ayant la possibilité de contribuer aux projets internes. Souhaitant mettre en pratique mes connaissances et les développer, je suis à la recherche d’une première expérience.</p>
+                    <p>Je souhaiterais intégrer une structure qui me permette de continuer mon apprentissage tout en ayant la possibilité de contribuer aux projets internes. Souhaitant mettre en pratique mes connaissances et les développer, je suis à la recherche d’une première expérience.</p>
                     
                     <p>Suite à une reconversion professionnelle dans le domaine du développement WEB, j’ai effectué une formation de plusieurs mois portant sur les fondamentaux du métier : HTML, CSS, JavaScript, PHP. J'ai également manipulé des bases de données via MySQL.</p>
 
@@ -91,8 +91,8 @@
                         <div id="comp-perso">
                             <div class="gauche">
                                 <ul>
-                                    <li>Social</li>
                                     <li>Curieux</li>
+                                    <li>Sociable</li>
                                     <li>Rigoureux</li>
                                     <li>Autonome</li>
                                     <li>Dynamique</li>
@@ -101,8 +101,8 @@
                             <div class="droite">
                                 <ul>
                                     <li>Loyal</li>
-                                    <li>Réactif</li>
                                     <li>Investi</li>
+                                    <li>Réactif</li>
                                     <li>Polyvalent</li>
                                     <li>Persévérant</li>
                                     <li></li>

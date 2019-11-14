@@ -146,6 +146,24 @@ body {
     }
 }
 
+.logo {
+        /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+        -webkit-transition: all 1s ease; /* Safari et Chrome */
+        -moz-transition: all 1s ease; /* Firefox */
+        -ms-transition: all 1s ease; /* Internet Explorer 9 */
+        -o-transition: all 1s ease; /* Opera */
+        transition: all 1s ease;
+}
+    
+.logo:hover {
+        /* L'image est grossie de 75% */
+        -webkit-transform:scale(1.75); /* Safari et Chrome */
+        -moz-transform:scale(1.75); /* Firefox */
+        -ms-transform:scale(1.75); /* Internet Explorer 9 */
+        -o-transform:scale(1.75); /* Opera */
+        transform:scale(1.75);
+}
+
 // Version mobile jusqu'à 575px
 @media (max-width: 575px) {
     nav a {
@@ -360,4 +378,6 @@ body {
             @include imgM;
         }
     }
+
+    
 }
